@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0b132b;
+  color: white;
+}
+
+header {
+  background: #1c2541;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url("https://photo53.com/img/moon11.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  background: #1c2541;
+  padding: 30px;
+  border-radius: 12px;
+  width: 200px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background: #1c2541;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background: #1c2541;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #3a86ff;
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-card {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h2,
+.hero p {
+  opacity: 0; /* 最初は透明 */
+  animation: fadeInUp 2s forwards; /* 2秒でフェードインして位置を戻す */
+}
+
+.hero h2 {
+  animation-delay: 1s; /* h2は少し遅れて出る */
+}
+
+.hero p {
+  animation-delay: 2s; /* pはh2の後に出る */
+}
+
+#about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* About セクション 2カラムレイアウト */
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* スマホで縦並びになる */
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+#about {
+  padding: 80px 20px;
+  text-align: left; /* 文字を左寄せ */
+}
+
+.about-text {
+  background: #1c2541;
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.about-text:hover {
+  transform: translateY(-5px); /* ちょっと浮かせる */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    width: 100%;
+  }
+}
+
+.map iframe {
+  width: 200%;
+  height: 400px; /* 高さはお好みで調整 */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* アクセス全体 */
+#access {
+  padding: 50px 20px;
+  background: #1c2541;
+}
+
+#access h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* 2カラム化 */
+.access-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto; /* ← これで左右中央に寄せる */
+  justify-content: space-between; /* カラム同士の間隔を調整 */
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .access-container {
+    flex-direction: column;
+  }
+
+  .map,
+  .info.card {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Contactセクション全体 */
+#contact {
+  padding: 50px 20px;
+  background: #1c2541;
+}
+
+/* 2カラム化 */
+.contact-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* フォーム */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #00008b;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #1e90ff;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+#site-footer {
+  background-color: #1c2541; /* 背景色 */
+  color: #fff; /* 文字色 */
+  padding: 20px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}

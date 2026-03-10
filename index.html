@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Moon Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>🌙 Moon Cafe</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#access">Access</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>静かな夜に、月とコーヒー</h2>
+      <p>Moon Cafeでゆったりした時間を</p>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <div class="menu-container">
+        <div class="menu-card">
+          <img
+            src="https://gahag.net/img/201604/12s/gahag-0075110319-1.jpg"
+            alt="Coffee"
+          />
+          <h3>Coffee</h3>
+          <p>¥500</p>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="https://user0514.cdnw.net/shared/img/thumb/OG458A8165_TP_V.jpg"
+            alt="Latte"
+          />
+          <h3>Latte</h3>
+          <p>¥550</p>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="https://user0514.cdnw.net/shared/img/thumb/PPO_1000maicake_TP_V.jpg"
+            alt="Cake"
+          />
+          <h3>Cake</h3>
+          <p>¥750</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+            alt="Moon Cafe interior"
+          />
+        </div>
+        <div class="about-text">
+          <h2>About Moon Cafe</h2>
+          <p>
+            Moon
+            Cafeは夜にゆっくり過ごせる、月とコーヒーを楽しむためのカフェです。<br />
+            落ち着いた空間で、読書や友人との会話、ひとりの時間を満喫できます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="access">
+      <h2>Access</h2>
+      <div class="access-container">
+        <div class="map">
+          <!-- Google Map埋め込み or 画像 -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.8095239417758!2d139.7464335843381!3d35.66791187543923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b91f07551fb%3A0xf26a46e851a54585!2z44CSMTA1LTAwMDEg5p2x5Lqs6YO95riv5Yy66JmO44OO6ZaA77yS5LiB55uu77yT4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1773112271275!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="info">
+          <p>〒123-4567 東京都〇〇区△△町1-2-3</p>
+          <p>最寄駅：〇〇駅 徒歩5分</p>
+          <p>営業時間：10:00〜20:00</p>
+          <p>駐車場あり</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <!-- お問い合わせフォーム -->
+        <form class="contact-form">
+          <label for="name">お名前</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="例：山田太郎"
+            required
+          />
+
+          <label for="email">メールアドレス</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+          />
+
+          <label for="message">お問い合わせ内容</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="内容を入力してください"
+            required
+          ></textarea>
+
+          <button type="submit">送信</button>
+        </form>
+
+        <!-- 連絡先情報 -->
+        <div class="contact-info card">
+          <p>〒123-4567 東京都〇〇区△△町1-2-3</p>
+          <p>電話：03-1234-5678</p>
+          <p>Email：info@mooncafe.jp</p>
+          <p>営業時間：10:00〜20:00</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="site-footer">
+      <p>© 2026 MOON Cafe</p>
+    </footer>
+  </body>
+</html>
